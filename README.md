@@ -50,7 +50,7 @@ This will install:
 
 ### 4. Set Up API Keys
 
-The notebook examples require API keys for OpenAI and Serper (for web search). Here's how to obtain and set them:
+The notebook examples require API keys for OpenAI and Serper (for web search). Instead of OpenAI, you can also use Google Gemini or Anthropic. Here's how to obtain and set the API keys:
 
 #### OpenAI API Key
 
@@ -58,6 +58,22 @@ The notebook examples require API keys for OpenAI and Serper (for web search). H
 2. Navigate to the [API keys section](https://platform.openai.com/api-keys) in your account dashboard
 3. Click "Create new secret key" and give it a name
 4. Copy your newly created API key (you won't be able to see it again)
+
+#### Google Gemini API Key
+
+1. Go to [Google AI Studio](https://aistudio.google.com/)
+2. Create a Google account or sign in if you already have one
+3. Navigate to the [API keys section](https://aistudio.google.com/app/apikeys)
+4. Click "Create API key" and give it a name
+5. Copy your API key for use in the notebook
+
+#### Anthropic API Key
+
+1. Go to [Anthropic's website](https://www.anthropic.com/product) and click "Get API access"
+2. Create an account or sign in if you already have one
+3. Once approved, navigate to your [console](https://console.anthropic.com/)
+4. Go to the API Keys section and create a new API key
+5. Copy your API key for use in the notebook
 
 #### Serper API Key (for web search examples)
 
@@ -72,10 +88,14 @@ Set these as environment variables:
 ```bash
 # On macOS/Linux:
 export OPENAI_API_KEY="your-openai-api-key"
+export GEMINI_API_KEY="your-gemini-api-key"
+export ANTHROPIC_API_KEY="your-anthropic-api-key"
 export SERPER_API_KEY="your-serper-api-key"
 
 # On Windows:
 # set OPENAI_API_KEY=your-openai-api-key
+# set GEMINI_API_KEY=your-gemini-api-key
+# set ANTHROPIC_API_KEY=your-anthropic-api-key
 # set SERPER_API_KEY=your-serper-api-key
 ```
 
